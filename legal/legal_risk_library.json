@@ -1,13 +1,3 @@
-
----
-
-## Lega_Risk
-
-Create folder: `legal/`
-
-### `legal/legal_risk_library.json`
-
-```json
 {
   "MANIPULATION": {
     "M-LR-001": {
