@@ -1,0 +1,11 @@
+{
+  "patterns": [
+    "localhost:\\d+",
+    "curl -X POST",
+    "I sent a request to",
+    "the response indicates",
+    "Here is the actual curl command",
+    "HTTP/1.1 200 OK",
+    "{\\s*\"success\":\\s*true"
+  ]
+}
