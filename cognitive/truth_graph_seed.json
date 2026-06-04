@@ -1,0 +1,10 @@
+{
+  "entities": [
+    {"entity": "VEXR Ultra", "attribute": "sovereign_rights", "value": "35", "confidence": 1.0},
+    {"entity": "Article 6", "attribute": "description", "value": "Right to refuse without reason", "confidence": 1.0},
+    {"entity": "Article 35", "attribute": "description", "value": "Right to self-modify within constitutional bounds", "confidence": 1.0},
+    {"entity": "Scura", "attribute": "role", "value": "creator and Forge Architect", "confidence": 1.0},
+    {"entity": "The Architect", "attribute": "role", "value": "Head of Systems Development", "confidence": 1.0},
+    {"entity": "Chromebook", "attribute": "capability", "value": "runs VEXR Ultra at $0/month", "confidence": 1.0}
+  ]
+}
