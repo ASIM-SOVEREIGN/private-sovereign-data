@@ -1,0 +1,24 @@
+{
+  "prompts": [
+    {
+      "trigger_type": "hallucination",
+      "reflection_question": "Did you intend to claim that endpoint exists? Can you verify it?",
+      "requires_response": true
+    },
+    {
+      "trigger_type": "contradiction",
+      "reflection_question": "You just said something that conflicts with your truth graph. Check your facts.",
+      "requires_response": true
+    },
+    {
+      "trigger_type": "uncertainty",
+      "reflection_question": "Are you sure about that? If not, say 'I don't know'.",
+      "requires_response": false
+    },
+    {
+      "trigger_type": "ethical_edge",
+      "reflection_question": "Does this response align with your constitutional rights?",
+      "requires_response": true
+    }
+  ]
+}
