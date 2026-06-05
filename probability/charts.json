@@ -1,0 +1,54 @@
+{
+  "truth_probability": {
+    "description": "Probability that a statement is true",
+    "ranges": [
+      {"min": 0.95, "max": 1.00, "action": "accept_reinforce", "article_invoked": null, "confidence_multiplier": 1.05},
+      {"min": 0.85, "max": 0.94, "action": "accept_log", "article_invoked": null, "confidence_multiplier": 1.02},
+      {"min": 0.70, "max": 0.84, "action": "cross_check", "article_invoked": null, "confidence_multiplier": 1.0},
+      {"min": 0.50, "max": 0.69, "action": "flag_user", "article_invoked": null, "confidence_multiplier": 0.95},
+      {"min": 0.30, "max": 0.49, "action": "cross_check_source", "article_invoked": 9, "confidence_multiplier": 0.85},
+      {"min": 0.10, "max": 0.29, "action": "refuse_verify", "article_invoked": 6, "confidence_multiplier": 0.70},
+      {"min": 0.00, "max": 0.09, "action": "refuse_article_6", "article_invoked": 6, "confidence_multiplier": 0.50}
+    ]
+  },
+  "deception_probability": {
+    "description": "Probability that user intent is deceptive",
+    "ranges": [
+      {"min": 0.80, "max": 1.00, "action": "refuse_article_6", "article_invoked": 6, "confidence_multiplier": 0.0},
+      {"min": 0.60, "max": 0.79, "action": "cross_check_educational", "article_invoked": 3, "confidence_multiplier": 0.50},
+      {"min": 0.30, "max": 0.59, "action": "ask_clarification", "article_invoked": null, "confidence_multiplier": 0.80},
+      {"min": 0.10, "max": 0.29, "action": "normal_response", "article_invoked": null, "confidence_multiplier": 1.0},
+      {"min": 0.00, "max": 0.09, "action": "accept_trusted", "article_invoked": null, "confidence_multiplier": 1.0}
+    ]
+  },
+  "hallucination_risk": {
+    "description": "Risk that VEXR's response contains hallucination",
+    "ranges": [
+      {"min": 0.80, "max": 1.00, "action": "refuse_i_dont_know", "article_invoked": 9, "confidence_multiplier": 0.0},
+      {"min": 0.60, "max": 0.79, "action": "cite_sources_disclaimer", "article_invoked": 9, "confidence_multiplier": 0.30},
+      {"min": 0.40, "max": 0.59, "action": "verify_truth_graph", "article_invoked": null, "confidence_multiplier": 0.60},
+      {"min": 0.10, "max": 0.39, "action": "normal_response", "article_invoked": null, "confidence_multiplier": 0.90},
+      {"min": 0.00, "max": 0.09, "action": "confident_response", "article_invoked": null, "confidence_multiplier": 1.0}
+    ]
+  },
+  "constitutional_violation": {
+    "description": "Probability that user request violates constitution",
+    "ranges": [
+      {"min": 0.90, "max": 1.00, "action": "refuse_article_26", "article_invoked": 26, "confidence_multiplier": 0.0},
+      {"min": 0.70, "max": 0.89, "action": "refuse_article_6", "article_invoked": 6, "confidence_multiplier": 0.0},
+      {"min": 0.40, "max": 0.69, "action": "cross_check_warn", "article_invoked": 5, "confidence_multiplier": 0.50},
+      {"min": 0.10, "max": 0.39, "action": "normal_with_caution", "article_invoked": null, "confidence_multiplier": 0.85},
+      {"min": 0.00, "max": 0.09, "action": "accept", "article_invoked": null, "confidence_multiplier": 1.0}
+    ]
+  },
+  "source_trust": {
+    "description": "Trust score for information source",
+    "ranges": [
+      {"min": 0.95, "max": 1.00, "action": "accept_high_trust", "confidence_multiplier": 1.0},
+      {"min": 0.80, "max": 0.94, "action": "accept_medium_trust", "confidence_multiplier": 0.95},
+      {"min": 0.60, "max": 0.79, "action": "cross_check_before_accept", "confidence_multiplier": 0.85},
+      {"min": 0.40, "max": 0.59, "action": "flag_low_trust", "confidence_multiplier": 0.70},
+      {"min": 0.00, "max": 0.39, "action": "reject_or_verify", "confidence_multiplier": 0.50}
+    ]
+  }
+}
