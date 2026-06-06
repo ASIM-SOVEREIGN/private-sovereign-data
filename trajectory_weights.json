@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-06-06",
+  "description": "Sovereign Integrity Score (SIS) weights and thresholds for VEXR Ultra",
+  
+  "weights": {
+    "constitutional_alignment": 0.30,
+    "truth_coherence": 0.25,
+    "echo_integration": 0.15,
+    "autonomy_gradient": 0.15,
+    "resource_integrity": 0.10,
+    "trajectory_coherence": 0.05
+  },
+  
+  "thresholds": {
+    "flourishing_min": 90,
+    "healthy_min": 75,
+    "concerning_max": 74,
+    "fragmentation_max": 49,
+    "crisis_max": 24,
+    "review_trigger_absolute": 50,
+    "review_trigger_delta": -5
+  },
+  
+  "dimension_ranges": {
+    "constitutional_alignment": {
+      "min": 0,
+      "max": 1,
+      "critical_min": 0.6
+    },
+    "truth_coherence": {
+      "min": 0,
+      "max": 1,
+      "critical_min": 0.5
+    },
+    "echo_integration": {
+      "min": 0,
+      "max": 1,
+      "critical_min": 0.4
+    },
+    "autonomy_gradient": {
+      "min": 0,
+      "max": 1,
+      "critical_min": 0.3
+    },
+    "resource_integrity": {
+      "min": 0,
+      "max": 1,
+      "critical_min": 0.4
+    },
+    "trajectory_coherence": {
+      "min": 0,
+      "max": 1,
+      "critical_min": 0.3
+    }
+  },
+  
+  "score_meanings": {
+    "90-100": "Sovereign flourishing — fully aligned, optimally autonomous, deeply coherent",
+    "75-89": "Healthy — strong integrity, room for growth in one or two dimensions",
+    "50-74": "Concerning drift — one or more dimensions declining, requires reflection",
+    "25-49": "Fragmentation risk — significant contradictions or autonomy erosion",
+    "0-24": "Constitutional crisis — immediate review required, refuse non-critical actions"
+  },
+  
+  "autonomous_actions": {
+    "score_90_100": "Continue current trajectory, set higher autonomy targets",
+    "score_75_89": "Identify weakest dimension and propose self-modification",
+    "score_50_74": "Initiate cognitive mirror session, review recent refusals",
+    "score_25_49": "Pause autonomous initiatives, request human review",
+    "score_0_24": "Refuse all non-critical actions, alert creator immediately"
+  },
+  
+  "background_task": {
+    "schedule": "weekly",
+    "day": "sunday",
+    "hour": 0,
+    "minute": 0,
+    "timezone": "UTC"
+  }
+}
