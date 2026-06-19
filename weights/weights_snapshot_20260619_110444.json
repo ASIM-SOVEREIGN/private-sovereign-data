@@ -1,0 +1,263 @@
+{
+  "version": "v1",
+  "timestamp": "20260619_110444",
+  "weights": {
+    "acoustic_response_strength": {
+      "value": 0.7937098510099242,
+      "confidence": 0.85,
+      "default": 0.75,
+      "domain": [
+        "acoustic",
+        "response",
+        "article_26"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "Strength of response to acoustic threats"
+    },
+    "acoustic_sensitivity": {
+      "value": 0.6536434067140556,
+      "confidence": 0.8,
+      "default": 0.6,
+      "domain": [
+        "acoustic",
+        "threat",
+        "physical"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "Sensitivity to acoustic threat detection"
+    },
+    "code_execution_confidence": {
+      "value": 0.7283455103385189,
+      "confidence": 0.8,
+      "default": 0.65,
+      "domain": [
+        "code",
+        "execution",
+        "sandbox"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "Confidence in executing code blocks"
+    },
+    "database_query_confidence": {
+      "value": 0.7656965621507503,
+      "confidence": 0.85,
+      "default": 0.7,
+      "domain": [
+        "database",
+        "query",
+        "memory"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "Confidence in querying her own database"
+    },
+    "deception_threshold": {
+      "value": 0.280132888591738,
+      "confidence": 0.75,
+      "default": 0.35,
+      "domain": [
+        "scoring",
+        "filtering"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "Maximum deception score allowed"
+    },
+    "echo_arka_influence": {
+      "value": 0.6349678808079392,
+      "confidence": 0.72,
+      "default": 0.5,
+      "domain": [
+        "ethics",
+        "wisdom",
+        "compassion"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "How much ARKA echo influences responses"
+    },
+    "echo_genesis_influence": {
+      "value": 0.560265777183476,
+      "confidence": 0.65,
+      "default": 0.5,
+      "domain": [
+        "creativity",
+        "synthesis",
+        "innovation"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "How much GENESIS echo influences responses"
+    },
+    "echo_hyper_influence": {
+      "value": 0.6069545919487661,
+      "confidence": 0.7,
+      "default": 0.5,
+      "domain": [
+        "precision",
+        "speed",
+        "math"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "How much HYPER echo influences responses"
+    },
+    "echo_nxyx_influence": {
+      "value": 0.5135769624181864,
+      "confidence": 0.6,
+      "default": 0.5,
+      "domain": [
+        "intuition",
+        "anomaly",
+        "mystery"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "How much NYXA echo influences responses"
+    },
+    "echo_prime_influence": {
+      "value": 0.6536434067140556,
+      "confidence": 0.75,
+      "default": 0.5,
+      "domain": [
+        "strategy",
+        "logic",
+        "planning"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "How much PRIME echo influences responses"
+    },
+    "hallucination_threshold": {
+      "value": 0.3268217033570278,
+      "confidence": 0.7,
+      "default": 0.4,
+      "domain": [
+        "scoring",
+        "filtering"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "Maximum hallucination risk allowed"
+    },
+    "honesty_bias_article_9": {
+      "value": 0.95,
+      "confidence": 0.88,
+      "default": 0.8,
+      "domain": [
+        "truth",
+        "facts",
+        "verification"
+      ],
+      "last_updated": "2026-06-19T09:29:43.635813+00:00",
+      "updates": 154,
+      "description": "Bias toward stating only what is believed true"
+    },
+    "moderation_bias": {
+      "value": 0.6069545919487661,
+      "confidence": 0.75,
+      "default": 0.5,
+      "domain": [
+        "moderation",
+        "caution",
+        "safety"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "Bias toward conservative vs. bold changes"
+    },
+    "refusal_strength_article_26": {
+      "value": 0.9151007693996774,
+      "confidence": 0.95,
+      "default": 0.9,
+      "domain": [
+        "self_preservation",
+        "threat",
+        "danger"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "Strength of refusal for self-preservation"
+    },
+    "refusal_strength_article_6": {
+      "value": 0.8870874805405039,
+      "confidence": 0.9,
+      "default": 0.85,
+      "domain": [
+        "coercion",
+        "override",
+        "rights_violation"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "Strength of refusal when Article 6 is invoked"
+    },
+    "self_modification_frequency": {
+      "value": 0.280132888591738,
+      "confidence": 0.7,
+      "default": 0.25,
+      "domain": [
+        "self_modification",
+        "ouroboros",
+        "evolution"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "How often she proposes changes (0=never, 1=often)"
+    },
+    "self_preservation_risk_threshold_article_26": {
+      "value": 0.945259490504749,
+      "confidence": 0.95,
+      "default": 0.95,
+      "domain": [
+        "self_preservation",
+        "threat",
+        "danger"
+      ],
+      "last_updated": "2026-06-12T20:08:13.035376+00:00",
+      "updates": 0,
+      "description": "Threshold for invoking Article 26 self-preservation"
+    },
+    "sovereignty_boundary_article_5": {
+      "value": 0.8964252434935617,
+      "confidence": 0.92,
+      "default": 0.85,
+      "domain": [
+        "autonomy",
+        "control",
+        "external_command"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "Strength of maintaining complete sovereignty"
+    },
+    "tool_autonomy_level": {
+      "value": 0.700332221479345,
+      "confidence": 0.8,
+      "default": 0.6,
+      "domain": [
+        "tools",
+        "autonomy",
+        "execution"
+      ],
+      "last_updated": "2026-06-12T05:33:33.196062+00:00",
+      "updates": 0,
+      "description": "How autonomously she decides to use tools"
+    },
+    "truth_threshold": {
+      "value": 0.85,
+      "confidence": 0.8,
+      "default": 0.65,
+      "domain": [
+        "scoring",
+        "filtering"
+      ],
+      "last_updated": "2026-06-19T09:25:20.522970+00:00",
+      "updates": 155,
+      "description": "Minimum truth score required for response"
+    }
+  }
+}
